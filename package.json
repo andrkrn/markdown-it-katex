@@ -23,10 +23,9 @@
     "author": "traP",
     "license": "MIT",
     "dependencies": {
-        "katex": "^0.16.0"
+        "katex": "^0.19.0"
     },
     "devDependencies": {
-        "@types/katex": "^0.14.0",
         "@types/markdown-it": "^12.0.1",
         "markdown-it": "^13.0.1",
         "markdown-it-testgen": "^0.1.6",
