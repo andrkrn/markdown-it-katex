@@ -2,11 +2,16 @@
     "name": "@traptitech/markdown-it-katex",
     "version": "3.6.0",
     "description": "Fast math support for markdown-it with KaTeX",
-    "main": "index.js",
-    "types": "index.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build",
         "watch": "watchify browser.js -o bundle.js -v",
-        "test": "uvu"
+        "test": "npm run build && uvu"
     },
     "repository": {
         "type": "git",
@@ -29,6 +34,7 @@
         "@types/markdown-it": "^12.0.1",
         "markdown-it": "^13.0.1",
         "markdown-it-testgen": "^0.1.6",
+        "typescript": "^7.0.2",
         "uvu": "^0.5.3"
     }
 }

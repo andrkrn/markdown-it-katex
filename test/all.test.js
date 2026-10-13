@@ -1,5 +1,5 @@
 const Md = require('markdown-it')
-const mdKatex = require('../index');
+const mdKatex = require('../dist');
 const testLoad = require('markdown-it-testgen').load
 const path = require('path')
 const katex = require('katex')
